@@ -22,7 +22,7 @@ const CartProduct: React.FC<CartProductProps> = ({
   handleRemoveProduct,
 }) => {
   return (
-    <div className={styles.productRow} key={product.productId}>
+    <div className={styles.productRow}>
       <div className="flex center justify-between">
         <div className="fs-17">
           <div>{product?.detail?.title}</div>

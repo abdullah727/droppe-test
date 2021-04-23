@@ -32,6 +32,7 @@ const Checklist: React.FC<ChecklistProps> = ({
       <div className={styles.approvedList}>
         {checklistData.map((product) => (
           <CheckListProduct
+            key={product.productId}
             product={product}
             getDiscountedPrice={getDiscountedPrice}
           />

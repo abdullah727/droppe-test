@@ -26,7 +26,7 @@ const Cart: React.FC<CartProps> = ({ data, ...others }) => {
       </div>
       <div className={styles.cart}>
         {data?.products.map((product) => (
-          <CartProduct product={product} {...others} />
+          <CartProduct product={product} {...others} key={product.productId} />
         ))}
       </div>
     </div>

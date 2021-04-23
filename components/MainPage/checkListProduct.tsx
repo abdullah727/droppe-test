@@ -12,7 +12,7 @@ const CheckListProduct: React.FC<CheckListProductProps> = ({
   getDiscountedPrice,
 }) => {
   return (
-    <div key={product.productId}>
+    <div>
       <div className="flex mt-3 center justify-between">
         <div className="flex center">
           <div className="mr-3"> {product?.count}</div>
