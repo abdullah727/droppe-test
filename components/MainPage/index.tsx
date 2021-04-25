@@ -109,14 +109,14 @@ const Main: React.FC<Props> = ({ cartData }) => {
   );
 
   const onEquallDistribute = useCallback(() => {
-    let smallest = Infinity;
+    let smallest = 999;
     let finalChecklistCopy = [];
     let cartsCopy = [...cartData];
-    carts.forEach((cart) => {
+    cartsCopy.forEach((cart) => {
       smallest =
         smallest > cart.products.length ? cart.products.length : smallest;
     });
-    carts.forEach((cart) => {
+    cartsCopy.forEach((cart) => {
       for (let i = 0; i < smallest; i++) {
         let element = cart.products[i];
         let isRepeat = finalChecklistCopy.find(
